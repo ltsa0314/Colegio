@@ -1,0 +1,50 @@
+<h5>Profesores</h5>
+<div class="card">
+  <div class="card-header">
+    <button class="btn btn-success" type="button" (click)="onNew()">
+      Nuevo
+    </button>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Identitificacion</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Direccion</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of data">
+          <td>{{ row.id }}</td>
+          <td>{{ row.identificacion }}</td>
+          <td>{{ row.nombre }}</td>
+          <td>{{ row.apellido }}</td>
+          <td>{{ row.direccion }}</td>
+          <td>
+            <button class="btn btn-info" type="button" (click)="onView(row.id)">
+              Ver
+            </button>
+            <button
+              class="btn btn-primary"
+              type="button"
+              (click)="onEdit(row.id)"
+            >
+              Editar
+            </button>
+            <button
+              class="btn btn-danger"
+              type="button"
+              (click)="onDelete(row.id)"
+            >
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

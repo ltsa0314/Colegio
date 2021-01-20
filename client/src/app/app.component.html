@@ -1,0 +1,41 @@
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>COLEGIO</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Leidy Tatiana Sanchez</p>
+            <li>
+                <a (click)="onNavigate('alumnos')">Alumnos</a>
+            </li>
+            <li>
+                <a (click)="onNavigate('asignaturas')">Asignaturas</a>
+            </li>
+            <li>
+                <a (click)="onNavigate('profesores')">Profesores</a>
+            </li>
+            <li>
+              <a (click)="onNavigate('reporte')">Reporte</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+

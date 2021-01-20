@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Colegio.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Colegio.Api.Ioc">
+            <summary>
+            Inversion of control (Invercion de control)
+            </summary>
+        </member>
+    </members>
+</doc>
